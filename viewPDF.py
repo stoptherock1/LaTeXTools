@@ -49,7 +49,7 @@ class View_pdfCommand(sublime_plugin.WindowCommand):
 			# Under "Set inverse search command-line", set:
 			# sublime_text "%f":%l
 			prefs_win = get_setting("windows", {})
-			su_binary = prefs_win.get("sumatra", "SumatraPDF.exe")
+			su_binary = prefs_win.get("sumatrapdf", "SumatraPDF.exe")
 			viewercmd = [su_binary, "-reuse-instance"]		
 		elif s == "Linux":
 			# the required scripts are in the 'evince' subdir
